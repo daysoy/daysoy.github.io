@@ -1,0 +1,52 @@
+<Schema name="trsignals">
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Dates">
+    <Hierarchy name="Dates" visible="true" hasAll="true" primaryKey="date_key">
+      <Table name="dim_date">
+      </Table>
+      <Level name="Year" visible="true" column="year" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Month" visible="true" column="month" ordinalColumn="date_key" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Date" visible="true" column="datestring" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Times">
+    <Hierarchy name="Times" visible="true" hasAll="true" primaryKey="time_key">
+      <Table name="dim_time">
+      </Table>
+      <Level name="Hour" visible="true" column="hh" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+      <Level name="Time" visible="true" column="hhmm" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension type="StandardDimension" visible="true" highCardinality="false" name="Signals">
+    <Hierarchy name="Signals" visible="true" hasAll="true" primaryKey="signals_key">
+      <Table name="dim_signals">
+      </Table>
+      <Level name="level5" visible="true" column="level5" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="IfParentsName">
+      </Level>
+      <Level name="level4" visible="true" column="level4" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="IfParentsName">
+      </Level>
+      <Level name="level3" visible="true" column="level3" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="IfParentsName">
+      </Level>
+      <Level name="level2" visible="true" column="level2" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="IfParentsName">
+      </Level>
+      <Level name="level1" visible="true" column="level1" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="IfParentsName">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="Results" visible="true" cache="true" enabled="true">
+    <Table name="fact_random">
+    </Table>
+    <DimensionUsage source="Dates" name="Dates" visible="true" foreignKey="date_key" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Times" name="Times" visible="true" foreignKey="time_key" highCardinality="false">
+    </DimensionUsage>
+    <DimensionUsage source="Signals" name="Signals" visible="true" foreignKey="signals_key" highCardinality="false">
+    </DimensionUsage>
+    <Measure name="Values" column="value" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+</Schema>

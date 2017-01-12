@@ -1,0 +1,37 @@
+1,Signal,OTMR,OTMR,OTMR,OTMR
+2,Signal,APS,APS,APS,APS
+3,Signal,BCU,Brakes,System / Dragging,Signal X
+4,Signal,BCU,Brakes,Blocks / Pads,Signal X
+5,Signal,BCU,Brakes,Distributor / Triple valve / Resistor,Signal X
+6,Signal,BCU,Brakes,Filters / Strainers,Signal X
+7,Signal,BCU,Brakes,Gauges,Signal X
+8,Signal,BCU,Brakes,Discs,Signal X
+9,Signal,BCU,Brakes,Calipers,Signal X
+10,Signal,BCU,Brakes,Reservoirs - Brake,Signal X
+11,Signal,BCU,Brakes,Brake modules / Chests / Decoders,Signal X
+12,Signal,BCU,Brakes,Wheel slide / sli[p,Signal X
+13,Signal,BCU,Brakes,Brake cylinders,Signal X
+14,Signal,BCU,Brakes,Testing/NDF,Signal X
+15,Signal,CABHVAC,CABHVAC,CABHVAC,CABHVAC
+16,Signal,CCTV,CCTV,CCTV,CCTV
+17,Signal,DVA,DVA,DVA,DVA
+18,Signal,EnergyMeter,EnergyMeter,EnergyMeter,EnergyMeter
+19,Signal,ETCS,ETCS,ETCS,ETCS
+20,Signal,EtherNetApp,EtherNetApp,EtherNetApp,EtherNetApp
+21,Signal,Gangway Doors CU,Gangway Doors CU,Gangway Doors CU,Gangway Doors CU
+22,Signal,HVAC,HVAC,HVAC,HVAC
+23,Signal,PA,PA,PA,PA
+24,Signal,PCS,PCS,PCS,PCS
+25,Signal,PDCU,PDCU,PDCU,PDCU
+26,Signal,PIS Control Unit,PIS Control Unit,PIS Control Unit,PIS Control Unit
+27,Signal,PIS Display,PIS Display,PIS Display,PIS Display
+28,Signal,Ride Comfort,Ride Comfort,Ride Comfort,Ride Comfort
+29,Signal,SRD CU,SRD CU,SRD CU,SRD CU
+30,Signal,Toilet,Toilet,Toilet,Toilet
+31,Signal,Traction,Traction,Traction,Traction
+32,Signal,Event,BCU Power Supply Off ( 4400),BCU Power Supply Off ( 4400),BCU Power Supply Off ( 4400)
+33,Signal,Event,BCU Control Unit Fault (4401),BCU Control Unit Fault (4401),BCU Control Unit Fault (4401)
+34,Signal,Event,BCU DNRA Fault (4402),BCU DNRA Fault (4402),BCU DNRA Fault (4402)
+35,Signal,Event,Parking Brake Dragging (4403),Parking Brake Dragging (4403),Parking Brake Dragging (4403)
+36,Signal,Event,Dragging Brake (4404),Dragging Brake (4404),Dragging Brake (4404)
+37,Signal,Event,Brake Control Unit Cock(s) Isolated (4405),Brake Control Unit Cock(s) Isolated (4405),Brake Control Unit Cock(s) Isolated (4405)
