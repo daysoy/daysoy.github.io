@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<plugin title="example-visualization"> 
+   <static-paths>
+     <!-- this translates to /pentaho/content/example-visualization/resources/* --> 
+     <static-path url="/example-visualization/resources" localFolder="resources"/>
+   </static-paths>
+   <external-resources> 
+  <file context="analyzer">content/example-visualization/resources/example.js</file> 
+  <file context="analyzer">content/example-visualization/resources/example_analyzer_plugin.js</file> 
+</external-resources>
+</plugin>

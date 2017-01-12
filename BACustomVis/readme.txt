@@ -1,0 +1,1 @@
+This folder goes at C:\Pentaho\server\pentaho-server\pentaho-solutions\system
