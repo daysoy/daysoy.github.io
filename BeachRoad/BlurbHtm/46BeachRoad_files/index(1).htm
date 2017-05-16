@@ -1,0 +1,33 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0125)http://hub.property-world.co.uk/skyco9/RX-hub/index.php -->
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+ <TITLE>CW8 3AB </TITLE> 
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<SCRIPT src="index(1)_files/js.js" type="text/javascript"></SCRIPT>
+
+<SCRIPT type="text/javascript" charset="utf-8">
+//<![CDATA[
+var infowindow=new google.maps.InfoWindow();var panoramamapmap='';var panoramamapmarkersmap=[];var markersmap=[];var to_htmlsmap=[];var from_htmlsmap=[];var mapmap=null;function onLoadmap(){var mapObjmap=document.getElementById("map");if(mapObjmap!='undefined'&&mapObjmap!=null){var mapOptionsmap={scrollwheel:false,zoom:16,mapTypeId:google.maps.MapTypeId.SATELLITE,mapTypeControl:false,mapTypeControlOptions:{style:google.maps.MapTypeControlStyle.DEFAULT}};mapOptionsmap.center=new google.maps.LatLng(53.250561,-2.542967);var stylesmap=1;mapmap=new google.maps.Map(mapObjmap,mapOptionsmap);mapmap.setOptions({styles:stylesmap});panoramamapmap=new google.maps.StreetViewPanorama(document.getElementById('map'));mapmap.setStreetView(panoramamapmap);var point=new google.maps.LatLng(53.2505609,-2.5429671);panoramamapmarkersmap.push(createMarker(panoramamapmap,point,"","",'','',"",''));panoramamapmap.setPosition(new google.maps.LatLng(53.2505609,-2.5429671));panoramamapmap.setVisible(true);var point=new google.maps.LatLng(53.2505609,-2.5429671);markersmap.push(createMarker(mapmap,point,"","",'','',"",''));}}
+function createMarker(map,point,title,html,icon,icon_shadow,sidebar_id,openers){var marker_options={position:point,map:map,title:title};if(icon!=''){marker_options.icon=icon;}
+if(icon_shadow!=''){marker_options.shadow=icon_shadow;}
+var new_marker=new google.maps.Marker(marker_options);if(html!=''){if(sidebar_id!=''){var sidebar=document.getElementById(sidebar_id);if(sidebar!=null&&sidebar!=undefined&&title!=null&&title!=''){var newlink=document.createElement('a');newlink.onclick=function(){map.setCenter(point);return false};newlink.innerHTML=title;sidebar.appendChild(newlink);}}}
+return new_marker;}
+function isArray(a){return isObject(a)&&a.constructor==Array;}
+function isObject(a){return(a&&typeof a=='object')||isFunction(a);}
+function isFunction(a){return typeof a=='function';}
+function isEmpty(obj){for(var i in obj){return false;}return true;}//]]>
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18666"></HEAD> 
+<BODY style="margin: 0px; padding: 0px;">
+<SCRIPT type="text/javascript">window.onload=onLoadmap;</SCRIPT>
+	
+<SCRIPT type="text/javascript" charset="utf-8">
+//<![CDATA[
+document.write('<div id="map" style="width: 396px; height: 396px; position:relative;"><\/div>');
+//]]>
+</SCRIPT>
+ <NOSCRIPT>&lt;b&gt;Javascript must be enabled in order to use Google 
+Maps.&lt;/b&gt;</NOSCRIPT>	 <!--?
+	//echo ($map--->printSidebar());	?&gt; 
+</BODY></HTML>

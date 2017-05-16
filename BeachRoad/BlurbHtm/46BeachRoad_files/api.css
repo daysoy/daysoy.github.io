@@ -1,0 +1,144 @@
+body {
+	margin: 0px; color: rgb(51, 51, 51); font-family: "Helvetica", Arial, sans-serif; font-size: 13px; font-style: normal; font-weight: normal; background-color: rgb(255, 255, 255);
+}
+h1 {
+	text-transform: uppercase; font-size: 30px;
+}
+h2 {
+	font-size: 26px;
+}
+h3 {
+	margin: 15px 0px 5px; font-size: 16px;
+}
+h4 {
+	margin: 4px 0px; font-size: 16px; font-weight: normal;
+}
+a {
+	color: rgb(51, 51, 51); font-weight: normal; text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+td a {
+	transition:color 0.3s; font-weight: normal; text-decoration: none !important; -webkit-transition: color 0.3s;
+}
+td a:hover {
+	color: rgb(0, 173, 239);
+}
+table {
+	width: 100%; text-align: left; color: rgb(0, 0, 0); font-size: 13px; border-collapse: collapse; background-color: rgb(227, 227, 227);
+}
+tr {
+	padding: 8px; border: 2px solid white; border-image: none;
+}
+th {
+	padding: 8px; border: 2px solid white; border-image: none;
+}
+td {
+	padding: 8px; border: 2px solid white; border-image: none;
+}
+tr:nth-child(2n+1) {
+	background-color: rgb(227, 227, 227);
+}
+tr:nth-child(2n) {
+	background-color: rgb(255, 255, 255);
+}
+th {
+	font-weight: bold; background-color: rgb(227, 227, 227);
+}
+td {
+	font-size: 12px;
+}
+label {
+	font-weight: bold; display: inline-block;
+}
+p {
+	margin: 5px 0px;
+}
+ul {
+	
+}
+ul li {
+	
+}
+.right {
+	
+}
+.left {
+	margin-bottom: 15px;
+}
+#lot_container {
+	margin: 0px auto; width: 960px;
+}
+#actions {
+	margin-bottom: 30px; position: relative; background-color: rgb(238, 238, 238);
+}
+#actions button {
+	margin: 0px; padding: 10px; border: currentColor; border-image: none; font-size: 15px; cursor: pointer; background-color: rgb(238, 238, 238);
+}
+#actions button:hover {
+	color: white; background-color: rgb(0, 173, 239);
+}
+#actions button:disabled {
+	cursor: default;
+}
+#actions button:disabled:hover {
+	color: rgb(127, 127, 127); background-color: rgb(238, 238, 238);
+}
+.next_button {
+	right: 0px; position: absolute;
+}
+#info_block {
+	width: 450px; padding-top: 30px; padding-right: 30px; margin-left: 20px; float: left; display: inline-block;
+}
+#right_block {
+	padding: 30px 0px; width: 460px; float: right; display: inline-block; -ms-overflow-x: hidden; background-color: rgb(238, 238, 238);
+}
+#lot_container p {
+	line-height: 17px;
+}
+iframe {
+	border: currentColor; border-image: none;
+}
+.lot_heading {
+	margin: 10px 0px 3px; color: rgb(0, 173, 239); font-size: 14px; font-weight: bold;
+}
+.accommodation_heading {
+	margin: 0px; font-weight: bold;
+}
+.lot_number {
+	color: rgb(0, 173, 239); padding-bottom: 5px; font-size: 20px; font-weight: bold; border-bottom-color: rgb(210, 210, 210); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.lot_text {
+	padding-bottom: 15px; margin-top: 2px; margin-bottom: 0px;
+}
+.lot_address {
+	margin: 20px 0px; line-height: 20px !important; font-size: 17px; font-weight: bold;
+}
+.lot_title {
+	padding: 10px 0px; color: rgb(0, 173, 239); line-height: 20px !important; font-size: 17px; font-weight: normal; margin-bottom: 20px; border-top-color: rgb(210, 210, 210); border-bottom-color: rgb(210, 210, 210); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;
+}
+.lot_price {
+	color: rgb(102, 102, 102); font-size: 17px; font-weight: normal; margin-bottom: 20px;
+}
+.regular_imgcontainer {
+	width: 190px; height: auto; margin-right: 15px; float: left;
+}
+img.lot_image_large {
+	border: 2px solid rgb(204, 204, 204); border-image: none;
+}
+img.lot_image_regular {
+	border: 2px solid rgb(204, 204, 204); border-image: none;
+}
+img.lot_image_large {
+	width: 396px; height: auto; margin-bottom: 10px; margin-left: 30px;
+}
+img.lot_image_regular {
+	width: 191px; margin-bottom: 10px; margin-left: 30px; max-height: 200px;
+}
+#legaldoc {
+	margin-bottom: 15px;
+}
+#legaldoc a {
+	font-size: 15px; text-decoration: underline;
+}
