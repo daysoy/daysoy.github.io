@@ -13,7 +13,7 @@ for(var i = 0; i < boxes.length; i++)
 {
    decryptedBytes = CryptoJS.AES.decrypt(boxes.item(i).innerHTML, ckey);
    plaintext = decryptedBytes.toString(CryptoJS.enc.Utf8);
-   boxes.item(i).innerHTML = plaintext;
+   boxes.item(i).innerHTML = plaintext.replace("<","&lt;");
 }
 
 }
@@ -29,11 +29,13 @@ Please enter your key: <input type="password" id="ckey">
  <input type="button" value="Go"  name="GoButton"   onClick='DoScript()'><BR>
  <font face="Courier">
  <table>
-<tr><td><div class="cc">U2FsdGVkX18hf+4qrbidmyc4JwzfTWNk7u5bkDwh0jo=</div></td><td><div class="cc">U2FsdGVkX1+rdKpr6OJ3zuAwqLrC9Pb/4qY+lnS+5LI=</div></td></tr>
-<tr><td><div class="cc">U2FsdGVkX1/1Fgh7uBUpMLREzZwGSukKp3DfpMI9X10hEkhrJrM8rj1DCkrCxcEB</div></td><td><div class="cc">U2FsdGVkX19CKxJegtFKtI0vR9SO6ub9idDdeU0SZLw=</div></td></tr>
-<tr><td><div class="cc">U2FsdGVkX1/cbxx8TKB98wIXNZILQbIq5547Vhv2Vw0=</div></td><td><div class="cc">U2FsdGVkX1+0YtYZ3Q/Un44mhp+YUIvF1LX1yRrtJqE=</div></td></tr>
-<tr><td><div class="cc">U2FsdGVkX1+ig3LNpl1tF1cOnRc0xdcgiMEF5RelM1lcwOrhlrUN7Uqo6GMsQuSF</div></td><td><div class="cc">U2FsdGVkX1+YK/tVFo19rAuutNjgeUHkpKvhSJEHNfNqxuHL/GdZ47RNLRuYo3BK</div></td></tr>
-<tr><td><div class="cc">U2FsdGVkX1+3EhujiSo6bq1n0pAi82O2qSyo5SbGWhBCWacRJ2f+zYCa4ud0sO71</div></td><td><div class="cc">U2FsdGVkX1+zkQKAbDVTopohxtEXG/vc5xt40GgWP9gkCgils1PUs12zllCsp3qp</div></td></tr>
+<tr><td><div class="cc">U2FsdGVkX19RIx7IloLSHJtA+xD9SnmM9rHfczpDs6o=</div></td><td><div class="cc">U2FsdGVkX18QdNPyWIK4HdajuxKkyhgQstPISITiVtw=</div></td></tr>
+<tr><td><div class="cc">U2FsdGVkX18kuv9bYkdjhPK6pQNOiPD0LVrTisFZ9vMtT9RQuwFRgbIxBqVIQatz</div></td><td><div class="cc">U2FsdGVkX18Y+APVQ9Ys09bM/rFbY+ZoG4menaeLAtA=</div></td></tr>
+<tr><td><div class="cc">U2FsdGVkX1/g6qLaPemVHYoX6i1p529qOh5AgRkTO18=</div></td><td><div class="cc">U2FsdGVkX19wukTLdeKEVdApV5bCSVlDT+hsqY7tBA4=</div></td></tr>
+<tr><td><div class="cc">U2FsdGVkX18mw/9oWKB2P1INC/V5rq+WScIV56Us9a/EiAJYUyy4rGMqrR23vNW5</div></td><td><div class="cc">U2FsdGVkX1/vjQ5sBTZslkWaRcwMfqIWx19HA9fzey+5hhp33mQQPAeXIMuHeSRN</div></td></tr>
+<tr><td><div class="cc">U2FsdGVkX1869rXK0Xu80fY+f04lNnbICRk25CdzNvzoWyTdTB4Q5b7TUiD/h/L3</div></td><td><div class="cc">U2FsdGVkX1+bGr3BMtUHfIepY/ciCIEwwag/GrkV5z/QmAVSHRrL2HzyahmBXfWd</div></td></tr>
+<tr><td><div class="cc">U2FsdGVkX1+n9v1vroLzzWm02K10QhEkkJn6fcvsqyQ6THPIIe9c87BmhNW/NTkR</div></td><td><div class="cc">U2FsdGVkX1+qgam544mAB+1+1gVHSbxZGDICGRbgoXM=</div></td></tr>
+<tr><td><div class="cc">U2FsdGVkX1+1J1v+Thv5AQHcClj54XbYIp3aZwrzOhkFGhkX0v3ue6/f7dec7HoU</div></td><td><div class="cc">U2FsdGVkX196TwKubqbySfVV1edMMkxKiEd9/kd3ZhM=</div></td></tr>
 
  </table>
  </font>
