@@ -1,0 +1,40 @@
+<HTML>
+<head> 
+<title>Cribsheet Central</title> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script>
+function DoScript() {
+
+ckey = document.getElementById("ckey").value
+//alert(ckey);
+var boxes = document.getElementsByClassName("cc");
+
+for(var i = 0; i < boxes.length; i++)
+{
+   decryptedBytes = CryptoJS.AES.decrypt(boxes.item(i).innerHTML, ckey);
+   plaintext = decryptedBytes.toString(CryptoJS.enc.Utf8);
+   //console.log(plaintext);
+   boxes.item(i).innerHTML = plaintext.replace("<","&lt;");
+}
+
+}
+</script>
+</head> 
+<body>
+<style>
+td{
+    border: 1px solid black;
+}
+</style>
+Please enter your key: <input type="password" id="ckey">
+ <input type="button" value="Go"  name="GoButton"   onClick='DoScript()'><BR>
+ <font face="Courier">
+ <table>
+<tr><td><div class="cc">U2FsdGVkX197ayjnuaZVJxUz6fSdmZjFWsgD4fIOo3s=</div></td><td><div class="cc">U2FsdGVkX19AAQEFBGn/+2UYmd+AJr84WcklsDVUe5s=</div></td></tr>
+<tr><td><div class="cc">U2FsdGVkX1/73tt/molIysVQ39jmKiA9qxh18nn6IjM=</div></td><td><div class="cc">U2FsdGVkX19yWFAm9DegORtOAkFpOUAFYaGnTnIm8Eg=</div></td></tr>
+
+ </table>
+ </font>
+</body>
+</HTML>
+

@@ -1,0 +1,45 @@
+<HTML>
+<head> 
+<title>Crypter Central</title> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script>
+function DoScript() {
+
+ckey = document.getElementById("ckey").value
+vdesc = document.getElementById("descid").value
+vcode = document.getElementById("codeid").value
+console.log(ckey);
+console.log(vdesc);
+console.log(vcode);
+
+//alert(ckey);
+var encrypteddesc = CryptoJS.AES.encrypt(vdesc, ckey);
+var encryptedcode = CryptoJS.AES.encrypt(vcode, ckey);
+//var decrypted = CryptoJS.AES.decrypt(encrypted, ckey);
+//alert(encrypteddesc);
+
+document.getElementsByClassName("encdesc").item(0).innerHTML = encrypteddesc.toString();
+document.getElementsByClassName("enccode").item(0).innerHTML = encryptedcode.toString();
+console.log(encrypteddesc.toString());
+console.log(encryptedcode.toString());
+
+}
+</script>
+</head> 
+<body>
+<style>
+td{
+    border: 1px solid black;
+}
+</style>
+Please enter your crypt key: <input id="ckey"><BR>
+Please enter a description: <input id="descid"><BR>
+Please enter whatever you want to encrypt: <input id="codeid"><BR>
+<input type="button" value="Go"  name="GoButton"   onClick='DoScript()'><BR>
+<font face="Courier">
+Description: <div class="encdesc">NA</div><BR>
+Secret: <div class="enccode">NA</div><BR>
+</font>
+</body>
+</HTML>
+
