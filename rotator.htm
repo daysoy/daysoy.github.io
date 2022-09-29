@@ -1,0 +1,57 @@
+<HTML>
+<head> 
+<title>Rotator Central</title> 
+<script>
+function DoScript() {
+
+ckey = document.getElementById("ckey").value
+//alert(ckey);
+var boxes = document.getElementsByClassName("cc");
+
+for(var i = 0; i < boxes.length; i++) 
+{
+   beforeval = boxes.item(i).innerHTML;
+   resstr = '';
+   for (var j = 0; j < beforeval.length; j++) 
+   {
+      keydig = parseInt(ckey.substr(j, 1));
+	  codedig = parseInt(beforeval.substr(j, 1));
+	  resdig = keydig + codedig;
+	  if (resdig > 9) 
+	  {
+	     resdig -= 10;
+      }
+	  resstr += resdig.toString();
+   }
+   //console.log(plaintext);
+   boxes.item(i).innerHTML = resstr;
+}
+
+}
+</script>
+</head> 
+<body>
+<style>
+td{
+    border: 1px solid black;
+}
+</style>
+Please enter your key: <input type="password" id="ckey">
+ <input type="button" value="Go"  name="GoButton"   onClick='DoScript()'><BR>
+ <font face="Courier">
+ <table>
+<tr><td>MS</td><td><div class="cc">7455</div></td></tr>
+<tr><td>Lloyds D</td><td><div class="cc">4542</div></td></tr>
+<tr><td>JLP </td><td><div class="cc">7326</div></td></tr>
+<tr><td>Duo</td><td><div class="cc">0278</div></td></tr>
+<tr><td>Lloyds C</td><td><div class="cc">8324</div></td></tr>
+<tr><td>Amex</td><td><div class="cc">3425</div></td></tr>
+<tr><td>Joint FD</td><td><div class="cc">8851</div></td></tr>
+<tr><td>NW Exec</td><td><div class="cc">4657</div></td></tr>
+<tr><td>Barc</td><td><div class="cc">1684</div></td></tr>
+
+ </table>
+ </font>
+</body>
+</HTML>
+
