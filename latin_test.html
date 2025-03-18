@@ -48,9 +48,11 @@ if (document.querySelector('input[name="mode"]:checked').value == "guesslatin") 
 <style>
 td{
     border: 1px solid black;
+	font-size: 46px;
+	font-family: "Lucida Console", "Courier New", monospace;
 }
 </style>
-<font face="Courier">
+<font size="80px" face="Courier">
  <table>
 <tr><td>Latin</td><td><div id="la">LA</div></td></tr>
 <tr><td>Declension</td><td><div id="de">DE</div></td></tr>
@@ -66,11 +68,17 @@ td{
 <div id="hidden1" class="displaynone">XXX</div>
 <div id="hidden2" class="displaynone">XXX</div>
 
+<br>
+<br>
 Mode:
     <input type="radio" name="mode" value="guesslatin" checked>Guess Latin
     <input type="radio" name="mode" value="guessenglish">Guess English
     <br>
+<br>
+<br>
 <input type="button" value="Next guess"  name="GoButton"   onClick='DoScript()'><BR>
+<br>
+<br>
 <input type="button" value="Reveal"  name="RevealButton"   onClick='DoReveal()'><BR>
 </body>
 </HTML>
